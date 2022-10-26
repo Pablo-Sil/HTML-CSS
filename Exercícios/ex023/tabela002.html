@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 500px;
+            border-collapse: collapse;
+        }
+        td, th{
+            border: 1px solid rgb(240, 158, 6);
+            padding: 10px;
+        }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+        thead, tfoot {
+            background-color: gray;
+            color: white;
+        }
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color:  gray;
+
+        }
+        tbody > tr:nth-child(odd) {
+            background-color: rgb(2, 2, 2);
+            color: aliceblue;
+          
+        }
+        tbody > tr:nth-child(even) {
+            background-color: red;
+            color: white;
+        }
+        td.num{
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!---
+        ANOTOMIA PARA TABELAS GRANDES
+        TABLE
+            CAPTION
+            THEAD
+                 TR, TD, TH 
+            TBODY
+                 TR, TD, TH 
+            TFOOT
+                  TR, TD, TH 
+
+    
+    -->
+    <table>
+        <caption>População das Unidades Federativas </caption>
+        <thead>
+               <th scope="col">Estados</th>
+               <th scope="col" style="width: 50px;">População</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
+             <tr>
+                <td>Minas Gerais </td>
+                <td class="num">21.168.791</td>
+             </tr>
+             <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.264.943</td>
+             </tr>
+             <tr>
+                <td>Bahia</td>
+                <td class="num">14.873.064</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11.377,239</td>
+            </tr>
+            <tr>
+                <td>Rio Grande de Sul</td>
+                <td class="num">11.433.957</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9.132.078</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="num">8.602.865</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">7.164.788</td>
+            </tr>
+
+
+        </tbody>
+        <tfoot>
+            <tr>
+               <th scope="row">Total de habitantes</th>
+               <td class="num"><strong>0000000</strong></td>
+            </tr>
+    
+        </tfoot>
+    </table>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus adipisci inventore dolore maiores nisi placeat quia est accusamus ratione expedita similique porro laboriosam laudantium voluptates eius sunt, voluptatum molestiae natus.
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus vel illum tempore ab consequuntur quam. Vel exercitationem labore quae quos unde tenetur corporis nobis earum cum molestiae. Dicta, hic eos?Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi blanditiis eligendi quas tenetur esse, dolorem ea culpa vel minima cupiditate? Repellendus nesciunt et dignissimos voluptates dolores sapiente alias, in cupiditate.
+
+    </p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati magni praesentium distinctio temporibus accusantium veniam, corporis quidem odio ipsum cupiditate officia, minima quod iste dolore odit? Impedit explicabo voluptate tenetur!</p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium voluptas consectetur voluptates, maxime est eligendi doloremque? Molestias error officia fugit consequuntur commodi, atque neque temporibus, facere minima incidunt aliquam minus!
+    </p>
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore quibusdam quod perspiciatis molestiae, sapiente debitis vel minus porro a rerum reiciendis quidem ipsam ex dicta quo dolor, accusamus deserunt natus.
+    </p>
+</body>
+</html>
